@@ -9,17 +9,14 @@
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <version>1.0</version>
     <description>PLG_REVARSEXTRA_XML_DESCRIPTION</description>
-
     <languages folder="language">
-        <language tag="en-GB">en-GB/en-GB.plg_revars_variablesubdomain.ini</language>
-        <language tag="en-GB">en-GB/en-GB.plg_revars_variablesubdomain.sys.ini</language>
-        <language tag="ru-RU">ru-RU/ru-RU.plg_revars_variablesubdomain.ini</language>
-        <language tag="ru-RU">ru-RU/ru-RU.plg_revars_variablesubdomain.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_revarsextra.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_revarsextra.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_revarsextra.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_revarsextra.sys.ini</language>
     </languages>
-
     <files>
-        <filename plugin="variablesubdomain">variablesubdomain.php</filename>
+        <filename plugin="revarsextra">revarsextra.php</filename>
         <folder>language</folder>
     </files>
-
 </extension>
