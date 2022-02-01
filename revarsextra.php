@@ -4,7 +4,7 @@
  * @package    Revars
  *
  * @author     Cymbal <cymbal@delo-design.ru> and Progreccor
- * @copyright  Copyright © 2021 Delo Design. All rights reserved.
+ * @copyright  Copyright © 2022 Delo Design. All rights reserved.
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  * @link       https://delo-design.ru
  */
@@ -50,6 +50,10 @@ class plgRevarsRevarsextra extends CMSPlugin
             (object) [
                 'variable' => '{VAR_MONTH}',
                 'value'    => date ( 'm' )
+            ],
+            (object) [
+                'variable' => '{VAR_DAY}',
+                'value'    => date ( 'd' )
             ]
         ];
     }
