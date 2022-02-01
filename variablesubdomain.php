@@ -19,7 +19,7 @@ use Joomla\CMS\Plugin\CMSPlugin;
  * @package   revars
  * @since     1.0
  */
-class plgRevarsVariablesubdomain extends CMSPlugin
+class plgRevarsExtra extends CMSPlugin
 {
 
 	/**
@@ -42,13 +42,15 @@ class plgRevarsVariablesubdomain extends CMSPlugin
 
 	public function onRevarsAddVariables()
 	{
-		JLoader::register('plgSystemMultisiteswitch', JPATH_PLUGINS . '/system/multisiteswitch/multisiteswitch.php');
-
 		return [
 			(object) [
-				'variable' => '{VAR_SUBDOMAIN}',
-				'value'    => strtoupper(plgSystemMultisiteswitch::$subDomain)
-			]
+				'variable' => '{VAR_YEAR}',
+				'value'    => date ( 'Y' )
+			],
+            [
+                'variable' => '{VAR_MONTH}',
+                'value'    => date ( 'm' )
+            ]
 		];
 	}
 
